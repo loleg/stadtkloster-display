@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="description" content="">
+
+    <title>Stadtkloster Frieden</title>
+
+    <link rel="stylesheet" href="res/bookings-display.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+<style type="text/css">
+    
+body .logo-container .logo {
+  margin: 15px;
+  width: 150px;
+  height: 110px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("res/stadtkloster-logo.png");
+}
+
+.container {
+  background-color: rgb(219, 215, 190);
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.container .bookings-table tr.booking > td {
+  border-color: rgb(251, 118, 96);
+}
+.bookings-table tr.booking {
+  background-color: rgb(218, 232, 241);
+}
+</style>
+
+
+
+<script type="text/javascript">
+  var firstErrorMessage = true
+  window.onerror = function(msg, url, linenumber) {
+    var elMessageContainer = document.querySelector(".bottom-content")
+
+    if (firstErrorMessage) {
+      firstErrorMessage = false
+      elMessageContainer.innerHTML =
+        '<code style="display: block; margin-top: 2em; color: grey;">' +
+          window.navigator.userAgent +
+        '</code>'
+    }
+
+    elMessageContainer.innerHTML +=
+        '<code style="display: block; margin-top: 1em; padding-top: 1em; border-top: 1px solid grey;">' +
+          msg + '<br>' +
+          url + ':' + linenumber +
+        '</code>'
+
+    return true
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  window.BENJIBOOKS_API_URL = "https:\/\/www.benjibooks.com\/api\/tenants\/stadtklosterfrieden\/today\/?token=wkuqnH8aE6uHG9aq3od7"
+</script>
+
+<script type="text/javascript" src="res/moment-with-locales.min.js" defer="defer"></script>
+<script type="text/javascript" src="res/jquery-3.7.1.min.js" defer="defer"></script>
+<script type="text/javascript" src="res/bookings-display.js" defer="defer"></script>
+
+  </head>
+<body>
+    
+<div class="container-outer">
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo"></div>
+      <div class="loader"></div>
+    </div>
+
+    <h1 class="title">
+      Gäste heute&nbsp;—
+      <span id="date-today" style="white-space: nowrap;"></span>
+          —
+      <span id="clock" style="white-space: nowrap;"></span>
+    </h1>
+
+    <div class="center-content"><table class="table bookings-table">
+    </table></div>
+
+    <div class="bottom-content"></div>
+  </div>
+</div>
+
+</body></html>
