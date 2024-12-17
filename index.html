@@ -10,10 +10,10 @@
     <title>Stadtkloster Frieden</title>
 
     <link rel="stylesheet" href="res/bookings-display.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
 <style type="text/css">
     
 body .logo-container .logo {
@@ -26,16 +26,43 @@ body .logo-container .logo {
 }
 
 .container {
-  background-color: rgb(219, 215, 190);
+  background-color: rgb(220, 210, 180);
   font-family: "Averia Serif Libre", serif;
   font-weight: 300;
   font-style: normal;
+}
+.container .bookings-table tr.booking:first-child > td {
+  border-color: rgb(100, 100, 100);
 }
 .container .bookings-table tr.booking > td {
   border-color: rgb(251, 118, 96);
 }
 .bookings-table tr.booking {
   background-color: rgb(218, 232, 241);
+}
+
+/* Snowflakes animation */
+/* Thanks https://statzuerich.shinyapps.io/weihnacht-prod/ */
+.snowflake {
+  color: white;
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  0% {
+    top: -10px;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
 }
 </style>
 
@@ -73,6 +100,7 @@ body .logo-container .logo {
 <script type="text/javascript" src="res/moment-with-locales.min.js" defer="defer"></script>
 <script type="text/javascript" src="res/jquery-3.7.1.min.js" defer="defer"></script>
 <script type="text/javascript" src="res/bookings-display.js" defer="defer"></script>
+<script type="text/javascript" src="res/snowflakes.js" defer="defer"></script>
 
   </head>
 <body>
