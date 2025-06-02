@@ -103,7 +103,8 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
         } else {
           // Empty table.
           $('.center-content').html(
-            '<p>Extra Raum gewünscht? Gastgeber fragen oder spontan reservieren unter effinger.ch/raeume</p>'
+            '<p>Extra Raum gewünscht? Gastgeber fragen oder spontan reservieren unter raumvermietung@stadtkloster-frieden.ch</p>'
+            + '<p>⏿ Schau dir die Räume an: stadtkloster-frieden.ch/#raum</p>'
           )
         }
 
